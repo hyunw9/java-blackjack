@@ -23,4 +23,10 @@ public class Name {
         }
     }
 
+    public static void validateNameLength(String name){
+        if(name.length()<1){
+            throw new IllegalArgumentException("이름 길이는 1글자 이상이어야 합니다.");
+        }
+    }
 }
+
