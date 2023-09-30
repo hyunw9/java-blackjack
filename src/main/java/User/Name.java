@@ -17,4 +17,10 @@ public class Name {
         return name;
     }
 
+    public static void validateWrongNameValue(String name){
+        if(name == null){
+            throw new NullPointerException("이름은 Null 값이 될 수 없습니다.");
+        }
+    }
+
 }
