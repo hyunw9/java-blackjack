@@ -13,4 +13,8 @@ public class Name {
         return new Name(name);
     }
 
+    public String getName() {
+        return name;
+    }
+
 }
