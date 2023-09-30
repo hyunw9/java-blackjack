@@ -21,3 +21,12 @@ public class Names {
         return new Names(nameList);
     }
 
+    public static void validateDuplication(List<Name> nameList){
+        long distinct = nameList.stream()
+                .map(Name::getName)
+                .distinct()
+                .count();
+        if(distinct < nameList.size()){
+            throw new IllegalArgumentException("이름이 중복됩니다.");
+        }
+    }
