@@ -30,3 +30,9 @@ public class Names {
             throw new IllegalArgumentException("이름이 중복됩니다.");
         }
     }
+
+    public List<Name> getNames() {
+        return names;
+    }
+}
+
